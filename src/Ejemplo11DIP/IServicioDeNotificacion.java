@@ -2,12 +2,12 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Interface.java to edit this template
  */
-package Actividad5;
+package Ejemplo11DIP;
 
 /**
  *
  * @author Usuario
  */
-public interface EnviarPorCorreo {
-    double calcularEnvio(double peso, double distancia);
+public interface IServicioDeNotificacion {
+    void notificar();
 }
