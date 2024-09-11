@@ -20,7 +20,7 @@ public class main {
         IProcesarOrdenUps ups = new UpsImpl();
         IProcesarOrdenFedex fedex = new FedexImpl();
         IProcesarOrdenDhl dhl = new DhlImpl();
-        SistemaEnvioUps sistema = new SistemaEnvioUps(ups,fedex,dhl);
+        SistemaEnvio sistema = new SistemaEnvio(ups,fedex,dhl);
         Orden orden= new Orden("manizales", "bogota");
         sistema.enviarOrdenUps(orden);
         sistema.enviarOrdenFedex(orden);

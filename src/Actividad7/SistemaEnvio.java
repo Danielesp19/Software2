@@ -8,12 +8,12 @@ package Actividad7;
  *
  * @author Usuario
  */
-public class SistemaEnvioUps {
+public class SistemaEnvio {
     private IProcesarOrdenUps procesarOrdenUps;
     private IProcesarOrdenFedex procesarOrdenFedex;
     private IProcesarOrdenDhl procesarOrdenDhl;
 
-    public SistemaEnvioUps(IProcesarOrdenUps procesarOrdenUps,IProcesarOrdenFedex procesarOrdenFedex,IProcesarOrdenDhl procesarOrdenDhl) {
+    public SistemaEnvio(IProcesarOrdenUps procesarOrdenUps,IProcesarOrdenFedex procesarOrdenFedex,IProcesarOrdenDhl procesarOrdenDhl) {
         this.procesarOrdenUps = procesarOrdenUps;
         this.procesarOrdenFedex = procesarOrdenFedex;
         this.procesarOrdenDhl = procesarOrdenDhl;
