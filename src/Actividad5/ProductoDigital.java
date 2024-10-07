@@ -11,6 +11,10 @@ package Actividad5;
 public class ProductoDigital extends Producto {
     private double tamañoArchivo;
 
+    
+    
+    
+
     public ProductoDigital(double tamañoArchivo, String nombre, double precio, int cantidad) {
         super(nombre, precio, cantidad);
         this.tamañoArchivo = tamañoArchivo;
