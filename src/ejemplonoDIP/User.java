@@ -2,24 +2,25 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package Ejemplo11DIP;
+package ejemplonoDIP;
 
-import ejemplo12noDIP.ServicioDeCorreo;
+import ejemplonoDIP.ServicioDeCorreo;
 
 /**
  *
  * @author Usuario
  */
 public class User {
+    private String nombre;
+    private String identificacion;
+    private ServicioDeCorreo ServicioDeCorreo= new ServicioDeCorreo();
 
-    private IServicioDeNotificacion ServicioDeNotificaciones;
-
-    public User(IServicioDeNotificacion ServicioDeNotificaciones) {
-        this.ServicioDeNotificaciones = ServicioDeNotificaciones;
+    public User() {
     }
     
     
+    
     public void enviarNotificaciom(){
-    ServicioDeNotificaciones.notificar();
+    ServicioDeCorreo.enviar();
 }
 }

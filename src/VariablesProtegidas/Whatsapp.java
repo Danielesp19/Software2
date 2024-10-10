@@ -2,17 +2,17 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package Ejemplo11DIP;
+package VariablesProtegidas;
 
 /**
  *
  * @author Usuario
  */
-public class ServicioDeNotificacionesImpl implements IServicioDeNotificacion{
+public class Whatsapp implements INotificable{
 
     @Override
-    public void notificar() {
-        System.out.println("estoy enviando el correo");
+    public void notificar(Notificacion notificacion) {
+        System.out.println("whatsApp: " + notificacion.getTitulo()+" "+ notificacion.getTexto());
     }
     
 }
